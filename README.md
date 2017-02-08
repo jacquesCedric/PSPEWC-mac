@@ -15,10 +15,10 @@ A macOS application that allows you to use your PSP as a wireless controller.
 When connected the PSP emulates keyboard button presses. So long as your game has assignable buttons, this controller should work. It's been tested in Retroarch and OpenEmu thus far, working perfectly!
 
 ##Compilation##
-Requires py2app and RUMPS to be installed!
 1. Clone source
-2. Run "python setup.py py2app"
-3. Locate app in "dist" folder
+2. Install modules py2app and RUMPS, if not already installed
+3. Run "python setup.py py2app"
+4. Locate app in "dist" folder
 
 ## Notes
 All software written by myself is public domain.
