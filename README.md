@@ -1,6 +1,6 @@
-# PSPEWC
-![](https://raw.githubusercontent.com/jacquesCedric/PSPEWC-mac/master/icon_128x128.png)
+# PSPEWC ![](https://github.com/jacquesCedric/PSPEWC-mac/blob/master/icon_32x32.png?raw=true)
 
+![](https://github.com/jacquesCedric/PSPEWC-mac/blob/master/pspewc_screen.png?raw=true)  
 A macOS application that allows you to use your PSP as a wireless controller.
 
 ## How to Setup
