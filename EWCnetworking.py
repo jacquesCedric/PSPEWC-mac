@@ -24,8 +24,10 @@ class Server:
 		self.sock.bind(self.addr)
 
 		#try this on several machines to make sure it always do well.
-		#self.localaddr = socket.gethostbyname_ex(socket.gethostname())[2][0]
-		self.localaddr = socket.getfqdn()
+		self.localaddr = socket.gethostbyname_ex(socket.gethostname())[2][0]
+		#self.localaddr = socket.getfqdn()
+		
 
 	def receive(self):
 		self.message, self.remoteaddr = self.sock.recvfrom(BUFFERSIZE)
+		
