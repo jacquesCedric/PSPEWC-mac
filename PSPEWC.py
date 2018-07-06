@@ -26,7 +26,7 @@ import time
 srv = EWCnetworking.Server()
 ctrl = EWCcontroller.Controller()
 
-VERSION = 'Version: 0.3m'
+VERSION = 'Version: 0.4'
 SERVER = srv.localaddr
 MOUSE = 'Enable mouse'
 
