@@ -26,16 +26,22 @@ import time
 srv = EWCnetworking.Server()
 ctrl = EWCcontroller.Controller()
 
-VERSION = 'Version: 0.3m'
+VERSION = 'Version: 0.4'
 SERVER = srv.localaddr
+MOUSE = 'Enable mouse'
 
 def rumpsGUI():
 	@rumps.clicked('Quit')
 	def clean_up_before_quit(_):
 	    print 'execute clean up code'
 	    rumps.quit_application()
-
-	app = rumps.App(u"\U0001F579", menu=['PSP Wireless Controller', VERSION, SERVER, None, None, 'Quit'], quit_button=None)
+	
+	@rumps.clicked(MOUSE)
+	def not_actually_prefs(sender):
+		ctrl.mouse = 1
+		sender.state = not sender.state
+		
+	app = rumps.App(u"\U0001F579", menu=['PSP Wireless Controller', VERSION, SERVER, MOUSE, None, None, 'Quit'], quit_button=None)
 	app.run()
 
 def runServer():
